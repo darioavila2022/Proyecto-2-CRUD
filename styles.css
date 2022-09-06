@@ -12,7 +12,6 @@ header{
     display: inline-block;
     line-height: 72px;
     margin-bottom: 20px;
-
 }
 p{
     margin-top: 0;
@@ -21,36 +20,60 @@ p{
 .head{
     text-align: center;
     position: relative;
-
-
 }
-
-.headerobjectswrapper{
-}
-
 .subhead{
     text-transform: uppercase;
     border-bottom: 2px solid #2f2f2f;
     border-top: 2px solid #2f2f2f;
     padding: 12px 0 12px 0;
-
 }
-.weatherforcastbox{
-    position: relative;
-    width: 12%;
-    left: 10px;
-    border: 3px double #2f2f2f;
-    padding: 10px 15px 10px 15px;
-    line-height: 20px;
-    display: inline-block;
-    margin: 0 50px 20px -360px;
-}
-.content{
-    font-size: 0;
-    line-height: 0;
-    word-spacing: -.31em;
-    display: inline-block;
-    margin: 30px 2% 0 2%;
 
-
+body {
+  font-family: sans-serif;
+  margin: 0 50px;
 }
+
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+#posts {
+  width: 400px;
+}
+
+i {
+  cursor: pointer;
+}
+body {
+    font-family: sans-serif;
+    margin: 0 50px;
+  }
+  
+  .container {
+    display: flex;
+    gap: 50px;
+  }
+  
+  #posts {
+    width: 400px;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+
+  #posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .options {
+    display: flex;
+    gap: 25px;
+  }
+  
+  #msg {
+    color: red;
+  }
