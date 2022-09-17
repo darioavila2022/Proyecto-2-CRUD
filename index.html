@@ -5,82 +5,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link
         href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
         rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./styles.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./styles.css">
     <title>Primer Gato Chileno En Marte</title>
 </head>
 
 <body>
-    <div class="head">
-        <div class="headerobjectswrapper">
-            <header>El Genérico</header>
+
+    <header>
+
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">El Genérico Online</h5>
+                <span class="text-muted">Subscríbete para más noticias.</span>
+            </div>
         </div>
-        <div class="subhead">York, MA - Thursday August 30, 1978 - Seven Pages</div>
-    </div>
-    <div>
-        <h1>¡Primer gato chileno llega a Marte!</h1>
-        <h4>El suceso ocurrido durante la mañana de este martes generó expectativa mundial.</h4>
-        <p>El sujeto identificado como Salomón (9) fue avistado anoche por muchos cazanoticias
-            mientras sobrevolaba los techos de la ciudad de Punta Arenas, en la región de Magallanes. Según cuentan
-            testigos, de
-            los cuales dicho sea de paso, ninguno dejó registro audiovisual de lo ocurrido, atestiguaron semejante
-            hazaña. <br>
-            Luego del paso de las horas, empezaron a llegar las primeras imágenes desde la cuenta de Instagram del
-            protagonista de la noticia. Junto a su humano, identificado como Darío Ávila (31), parecían ambos muy a
-            gusto desde la atmósfera de Marte.
-            <br><br>
-            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/space-cat-on-mars-magda-lates.jpg"
-                alt="gato-luna" width="500px">
-        </p>
-    </div>
+        <nav class="navbar navbar-dark bg-dark py-4 px-2">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
 
-    <h2>¿Qué debería hacer Salomón?</h2>
-    <div class="container">
-        <div class="left"></div>
-        <div class="right"></div>
-    </div>
-
-    <div class="left">
-        <form id="form">
-          <label for="post"> Escribe tus ideas aquí!</label>
-          <br><br>
-          <textarea name="post" id="input" cols="30" rows="10"></textarea>
-          <br> <br>
-          <div id="msg"></div>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-      <div class="right">
-        <h3>Salomón debería:</h3>
-        <div id="posts"></div>
-      </div>
-
-      <div id="posts">
-        <div>
-          <p>Buscar amigos</p>
-          <span class="options">
-            <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
-            <i onClick="editPost(this)" class="fas fa-edit"></i>
-
-
-          </span>
+        <div class="head">
+            <div class="headtitle my-4">
+                <h1>El Genérico</h1>
+            </div>
+            <div class="subhead">
+                <h4>
+                    York, MA - Thursday August 30, 1978 - Seven Page</h4>
+            </div>
         </div>
-        <div >
-          <p>Ignorarlo todo y tomar una siesta
-          </p>
-          <span class="options">
-            <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
-            <i onClick="editPost(this)" class="fas fa-edit"></i>
 
+    </header>
 
-          </span>
+    <main>
+        <div class="container">
+            <div>
+                <h2>¡Primer gato chileno llega a Marte!</h2>
+                <h2>El suceso ocurrido durante la mañana de este martes generó expectativa mundial.</h2>
+                <p>El sujeto identificado como Salomón (9) fue avistado anoche por muchos cazanoticias
+                    mientras sobrevolaba los techos de la ciudad de Punta Arenas, en la región de Magallanes. Según
+                    cuentan
+                    testigos, de
+                    los cuales dicho sea de paso, ninguno dejó registro audiovisual de lo ocurrido, atestiguaron
+                    semejante
+                    hazaña. <br><br>
+                    Luego del paso de las horas, empezaron a llegar las primeras imágenes desde la cuenta de Instagram
+                    del
+                    protagonista de la noticia. Junto a su humano, identificado como Darío Ávila (31), parecían ambos
+                    muy a
+                    gusto desde la atmósfera de Marte.
+                </p>
+
+                <img src="./gato.jpeg" alt="gato-luna" class="mb-4">
+            </div>
+
+            <div>
+                <h2>¿Qué debería hacer Salomón?</h2>
+
+                <form id="form">
+
+                    <div id="msg"></div>
+
+                    <div>
+                        <textarea class="form-control" id="input" rows="5"></textarea>
+                        <button type="submit" class="btn btn-secondary btn-lg m-4">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="posts" class="posts"></div>
+    </main>
+
+    <footer class="bg-dark text-center text-white mt-5">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
         </div>
-      </div>
-      <script src="./index.js"></script>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022:
+            <a class="text-white">Darío Ávila </a>
+        </div>
+    </footer>
+
+
+    <script src="./main.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

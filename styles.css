@@ -1,79 +1,78 @@
-body{
-    font-family: 'Droid Serif', serif;
-    font-size: 14px;
-    color: #2f2f2f;
-    background-color: #f9f7f1;
-}
-header{
+  .head {
+    text-align: center;
+  }
+
+  .headtitle h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 90px;
     text-transform: uppercase;
-    display: inline-block;
     line-height: 72px;
-    margin-bottom: 20px;
-}
-p{
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-.head{
-    text-align: center;
-    position: relative;
-}
-.subhead{
+  }
+
+  .subhead {
+    font-family: 'Droid Serif', serif;
     text-transform: uppercase;
     border-bottom: 2px solid #2f2f2f;
     border-top: 2px solid #2f2f2f;
     padding: 12px 0 12px 0;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 0 50px;
-}
-
-.container {
-  display: flex;
-  gap: 50px;
-}
-
-#posts {
-  width: 400px;
-}
-
-i {
-  cursor: pointer;
-}
-body {
-    font-family: sans-serif;
-    margin: 0 50px;
+    margin: 0px;
   }
-  
-  .container {
-    display: flex;
-    gap: 50px;
+
+  main {
+    text-align: center;
+    font-family: 'Droid Serif', serif;
+    color: #2f2f2f;
   }
-  
-  #posts {
-    width: 400px;
+
+  main p {
+    text-align: justify;
+    font-size: 20px;
   }
-  
-  i {
+
+  .container h2 {
+    margin: 20px 0px 20px 0px;
+  }
+
+  form .form-control {
+    font-size: 20px;
+  }
+
+
+  .posts div {
+    margin: 20px 0px 20px 0px;
+    padding: 30px 20px 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+  }
+
+  .posts p {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .options .fas {
+    font-size: 35px;
+    margin: 10px 20px 10px 20px;
     cursor: pointer;
   }
 
-  #posts div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .options {
-    display: flex;
-    gap: 25px;
-  }
-  
-  #msg {
-    color: red;
+  @media screen and (max-width: 600px),
+  (max-width: 900px),
+  (max-width: 1100px) {
+    .headtitle h1 {
+      font-size: 50px;
+    }
+
+    .subhead h4 {
+      font-size: 15px;
+    }
+
+    main h2 {
+      font-size: 25px;
+    }
+
+    .container img {
+      width: 250px;
+    }
   }
