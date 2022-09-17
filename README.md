@@ -8,4 +8,4 @@ La información guardada en el localStorage no se borra al ingresar una nueva, s
 
 Descripción de prototipado simple:
 
-<img src="./prototipadoSimple.png">
+<img src="./PrototipadoSimple.png">
