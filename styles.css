@@ -1,8 +1,79 @@
-body {
-  background-image: url('https://123161-352384-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/10/Teletrak.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-attachment: fixed;
-
+body{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
 }
+header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.head{
+    text-align: center;
+    position: relative;
+}
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0 50px;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+#posts {
+  width: 400px;
+}
+
+i {
+  cursor: pointer;
+}
+body {
+    font-family: sans-serif;
+    margin: 0 50px;
+  }
+  
+  .container {
+    display: flex;
+    gap: 50px;
+  }
+  
+  #posts {
+    width: 400px;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+
+  #posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .options {
+    display: flex;
+    gap: 25px;
+  }
+  
+  #msg {
+    color: red;
+  }
